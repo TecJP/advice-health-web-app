@@ -2,7 +2,7 @@ import { Container, Navbar, NavbarBrand } from "react-bootstrap";
 import { UserCircle } from 'phosphor-react'
 export function Header() {
   return (
-    <Navbar expand="xl" variant="light" className="shadow-sm p-1 bg-white">
+    <Navbar expand="xl" variant="light" sticky="top" className="shadow-sm p-1 bg-white">
       <Container fluid>
         <Navbar.Text className="text-dark" style={{ marginLeft: '4rem' }}>
           <h1 className="fs-3">Advice Health Web App</h1>

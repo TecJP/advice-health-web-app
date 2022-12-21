@@ -8,7 +8,7 @@ export function DefaultLayout() {
     <Container fluid className="p-0 w-100">
       <Header />
       <Row className="w-100 ms-0">
-        <Col xs={1} className="p-0 ml-3 text-center" style={{ width: '5rem' }}>
+        <Col xs={1} className="p-0 ml-3 text-center" style={{ width: '3.5rem' }}>
           <Sidebar />
         </Col>
         <Col lg className="p-0">

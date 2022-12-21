@@ -3,11 +3,11 @@ import { Card, Stack, Container, Row, Col } from "react-bootstrap";
 
 export function AppointmentsList() {
   return (
-    <Container className="overflow-auto">
+    <Container className="p-0">
       <Stack gap={2}>
         <Card>
           <Card.Body>
-            <Row fluid className="align-middle">
+            <Row className="align-middle">
               <Col md="2">
                 <UserCircle size={52} />
               </Col>
@@ -20,7 +20,7 @@ export function AppointmentsList() {
         </Card>
         <Card>
           <Card.Body>
-            <Row fluid className="align-middle">
+            <Row className="align-middle">
               <Col md="2">
                 <UserCircle size={52} />
               </Col>
@@ -33,7 +33,7 @@ export function AppointmentsList() {
         </Card>
         <Card>
           <Card.Body>
-            <Row fluid className="align-middle">
+            <Row className="align-middle">
               <Col md="2">
                 <UserCircle size={52} />
               </Col>
@@ -46,7 +46,7 @@ export function AppointmentsList() {
         </Card>
         <Card>
           <Card.Body>
-            <Row fluid className="align-middle">
+            <Row className="align-middle">
               <Col md="2">
                 <UserCircle size={52} />
               </Col>
@@ -59,7 +59,33 @@ export function AppointmentsList() {
         </Card>
         <Card>
           <Card.Body>
-            <Row fluid className="align-middle">
+            <Row className="align-middle">
+              <Col md="2">
+                <UserCircle size={52} />
+              </Col>
+              <Col md="10">
+                <p className="mb-0">João Pedro de Deus Freitas</p>
+                <span className="mb-0">ás 11:30hrs com Hulgo Leonardo</span>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+        <Card>
+          <Card.Body>
+            <Row className="align-middle">
+              <Col md="2">
+                <UserCircle size={52} />
+              </Col>
+              <Col md="10">
+                <p className="mb-0">João Pedro de Deus Freitas</p>
+                <span className="mb-0">ás 11:30hrs com Hulgo Leonardo</span>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+        <Card>
+          <Card.Body>
+            <Row className="align-middle">
               <Col md="2">
                 <UserCircle size={52} />
               </Col>

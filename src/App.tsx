@@ -1,13 +1,11 @@
-import { Header } from "./components/Header";
-import { Sidebar } from "./components/Sidebar";
-
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './router';
 
 export function App() {
   return (
-    <>
-      <Header />
-      <Sidebar />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
 

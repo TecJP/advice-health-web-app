@@ -15,7 +15,7 @@ export function Calendar() {
   const [selectedDate, setSelectedDate] = useState<Date>()
 
   return (
-    <Container fluid className="mx-auto">
+    <Container fluid className="d-flex align-items-center justify-content-center">
       <DayPicker
         selected={selectedDate}
         onSelect={setSelectedDate}
@@ -23,6 +23,9 @@ export function Calendar() {
         fixedWeeks
         showOutsideDays
         mode="single"
+        style={{
+          backgroundColor: "#adb5bd"
+        }}
       />
     </Container>
   )
