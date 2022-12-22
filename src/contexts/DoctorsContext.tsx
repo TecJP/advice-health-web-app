@@ -10,6 +10,7 @@ export type Doctors = {
 
 interface DoctorsContextProps {
   doctors: Doctors[];
+  findDoctor: (id: string) => void;
 }
 
 interface DoctorsContextProviderProps {
@@ -32,8 +33,16 @@ export function DoctorsContextProvider({ children }: DoctorsContextProviderProps
     loadDoctors()
   }, []);
 
+  function findDoctor(id: string) {
+    const doctorName = doctors.find(doctor => doctor.id === id)
+    if (!doctorName) {
+      return;
+    }
+    return doctorName.name
+  }
+
   return (
-    <DoctorsContext.Provider value={{ doctors }}>
+    <DoctorsContext.Provider value={{ doctors, findDoctor }}>
       {children}
     </DoctorsContext.Provider>
   )

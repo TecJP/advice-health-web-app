@@ -47,7 +47,7 @@ export function Dashboard() {
         <Col className="p-0 h-100">
           <Calendar date={selectedDate} setDate={setSelectedDate} />
           <Container className="mt-5 p-0 pe-3 appointments-list-height">
-            <AppointmentsList />
+            <AppointmentsList date={selectedDate.getDate().toString()} />
           </Container>
         </Col>
       </Row>
