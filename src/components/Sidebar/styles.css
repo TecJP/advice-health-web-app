@@ -1,12 +1,25 @@
-.active {
-  color: #fff;
+button svg {
+  color: #0077B6;
+  transition: transform 0.5s
+}
+
+.sidebar-expanded button svg {
+  transform: rotate(180deg)
+}
+
+button svg:hover {
+  color: #03045E;
 }
 
 .item {
   text-decoration: none;
-  color: #000;
+  color: #0077B6;
+}
+
+.active {
+  color: #03045E;
 }
 
 .item:hover {
-  color: #ADB5BD;
+  color: #03045E;
 }

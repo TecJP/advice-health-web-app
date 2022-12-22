@@ -15,8 +15,8 @@ export function HoursList() {
                 <Container fluid className="d-flex align-items-center">
                   <UserCircle size={64} />
                   <Container fluid>
-                    <p className="mb-0 fs-4">João Pedro de Deus Freitas</p>
-                    <span className="mb-0 fs-5">CPF: 054.707.671-16</span>
+                    <p className="mb-0 fs-5">João Pedro de Deus Freitas</p>
+                    <span className="mb-0">CPF: 054.707.671-16</span>
                   </Container>
                 </Container>
               </Col>

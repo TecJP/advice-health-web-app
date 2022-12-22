@@ -12,8 +12,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className="mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -25,8 +25,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -38,8 +38,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -51,8 +51,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -64,8 +64,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -77,8 +77,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>
@@ -90,8 +90,8 @@ export function DoctorsList() {
                 <UserCircle size={52} />
               </Col>
               <Col md="10" className="ps-0">
-                <p className="fs-4 mb-0">João Pedro de Deus Freitas</p>
-                <span className="fs-5 mb-0">Especialidade do Médico</span>
+                <p className="fs-5 mb-0">João Pedro de Deus Freitas</p>
+                <span className=" mb-0">Especialidade do Médico</span>
               </Col>
             </Row>
           </Card.Body>

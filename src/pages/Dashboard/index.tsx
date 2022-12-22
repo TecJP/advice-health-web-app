@@ -7,7 +7,7 @@ import { NoticeAndRemindersTable } from "../../components/NoticeAndRemindersTabl
 
 export function Dashboard() {
   return (
-    <Container className="h-100" fluid>
+    <Container className="h-100 bg-blue" fluid>
       <Row style={{ height: 'calc(100vh - 87px)' }}>
         <Col lg="9" className="h-100">
           <Row className="pt-4 mx-4">
@@ -33,10 +33,10 @@ export function Dashboard() {
             </Col>
             <Col className="h-100" gap={2}>
               <Card className="h-100 p-2 mb-4" bg="secondary">
-                
+
               </Card>
               <Card className="h-100 p-2" bg="secondary">
-              
+
               </Card>
             </Col>
           </Row>
@@ -47,7 +47,7 @@ export function Dashboard() {
         </Col>
         <Col className="p-0 h-100">
           <Calendar />
-          <Container className="mt-5 p-0 pe-3" style={{ height: '32rem' }}>
+          <Container className="mt-5 p-0 pe-3 appointments-list-height">
             <AppointmentsList />
           </Container>
         </Col>

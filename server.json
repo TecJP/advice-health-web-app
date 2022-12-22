@@ -1,0 +1,53 @@
+{
+  "appointments-query": [
+    {
+      "id": "1",
+      "image": "./src/assets/coffee-express.svg",
+      "tags": [
+        "tradicional"
+      ],
+      "name": "Expresso Tradicional",
+      "description": "O tradicional café feito com água quente e grãos moídos",
+      "price": 9.9,
+      "quantity": 1
+    }
+  ],
+  "doctors": [
+    {
+      "id": "1",
+      "name": "João Pedro de Deus Freitas",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    },
+    {
+      "id": "2",
+      "name": "Zaiter Luis Barcelos Silva",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    },
+    {
+      "id": "3",
+      "name": "Francisco Xavier da Costa Neto",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    },
+    {
+      "id": "4",
+      "name": "Sandro Souza",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    },
+    {
+      "id": "5",
+      "name": "Fernando Pereira Batista",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    },
+    {
+      "id": "6",
+      "name": "João Antônio",
+      "crm": 505050,
+      "especialidade": "Pediatria"
+    }
+  ]
+}

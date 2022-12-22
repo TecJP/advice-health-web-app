@@ -1,37 +1,28 @@
-import { CalendarBlank, CaretDoubleRight, ChartBar, ListDashes } from "phosphor-react";
-import { useState } from "react";
+import { CaretDoubleRight } from "phosphor-react";
 import { Button, Navbar, Stack } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+
+import { menuItem } from "../../sidebar";
 import './styles.css'
 
-export function Sidebar() {
-  const menuItem = [
-    {
-      path: '/',
-      name: "Dashboard",
-      icon: <ChartBar size={32} />
-    },
-    {
-      path: '/appointments',
-      name: "Agendamentos",
-      icon: <CalendarBlank size={32} />,
-    },
-    {
-      path: '/appointments-query',
-      name: "Consultas",
-      icon: <ListDashes size={32} />
-    },
-  ]
+interface SidebarProps {
+  expanded: boolean,
+  toggleExpand: () => void,
+}
+
+export function Sidebar({ expanded, toggleExpand }: SidebarProps) {
+  const { pathname } = useLocation()
 
   return (
-    <Navbar className="h-100">
-      <Stack gap={3}>
-        <Button variant="transparent" className="border-0">
-          <CaretDoubleRight size={32} />
+    <Navbar className={`h-100 w-100 ms-0 me-2 ps-3 pe-3`}>
+      <Stack className="h-100" gap={3}>
+        <Button variant="transparent" className={`border-0 p-0 ps-0 ${expanded && 'd-flex align-items-center justify-content-end'}`} >
+          <CaretDoubleRight size={32} className={`${expanded && 'sidebar-expand'}`} onClick={toggleExpand} />
         </Button>
         {menuItem.map((item, index) => (
-          <NavLink key={index} to={item.path} className="item active" title={item.name}>
+          <NavLink key={index} to={item.path} className={`w-100 gap-1 d-flex align-items-center justify-content-start item ${pathname === item.path && 'active'}`} title={item.name}>
             {item.icon}
+            {expanded && <p className="m-0">{item.name}</p>}
           </NavLink>
         ))}
       </Stack>

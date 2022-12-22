@@ -5,7 +5,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: trasparent;
+  background: transparent;
 }
 
 /* Handle */
@@ -17,4 +17,36 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+nav {
+  background: #f1f1f1;
+}
+
+.bg-blue {
+  background: #F8F9FA;
+}
+
+.sidebar-width {
+  width: 4rem
+}
+
+.sidebar-expanded {
+  width: 12rem;
+}
+
+.body-height-minus-header {
+  height: calc(100vh - 83px)
+}
+
+.appointments-list-height {
+  height: 29rem;
+}
+
+.doctors-list-height {
+  height: 20rem;
+}
+
+.hours-list-height {
+  height: 47rem;
 }
