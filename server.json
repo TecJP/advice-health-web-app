@@ -7,20 +7,74 @@
         {
           "id": "1",
           "client": "João Paulo",
-          "doctor": "2",
-          "hour": "11"
+          "attended": true,
+          "doctor": "1",
+          "hour": "8",
+          "amount": 120
         },
         {
           "id": "2",
-          "client": "Leomir Dias",
-          "doctor": "1",
-          "hour": "12"
+          "client": "Maria Cristina",
+          "attended": true,
+          "doctor": "2",
+          "hour": "9",
+          "amount": 120
         },
         {
           "id": "3",
-          "client": "Neto Costa",
+          "client": "Maria de Fátima",
+          "attended": true,
+          "doctor": "2",
+          "hour": "10",
+          "amount": 120
+        },
+        {
+          "id": "4",
+          "client": "Elisângela",
+          "attended": true,
+          "doctor": "1",
+          "hour": "11",
+          "amount": 120
+        },
+        {
+          "id": "5",
+          "client": "Silvio Parreira",
+          "attended": true,
+          "doctor": "3",
+          "hour": "12",
+          "amount": 120
+        },
+        {
+          "id": "6",
+          "client": "Gabriela de Deus",
+          "attended": true,
           "doctor": "6",
-          "hour": "16"
+          "hour": "15",
+          "amount": 120
+        },
+        {
+          "id": "7",
+          "client": "Victor Hugo",
+          "attended": true,
+          "doctor": "2",
+          "hour": "16",
+          "amount": 120
+        },
+        {
+          "id": "8",
+          "client": "Leomir Dias",
+          "attended": false,
+          "doctor": "1",
+          "hour": "17",
+          "amount": 120
+        },
+        {
+          "id": "9",
+          "client": "Neto Costa",
+          "attended": false,
+          "doctor": "6",
+          "hour": "18",
+          "amount": 120
         }
       ]
     },
@@ -31,20 +85,26 @@
         {
           "id": "1",
           "client": "Sandro Divino",
+          "attended": false,
           "doctor": "4",
-          "hour": "9"
+          "hour": "9",
+          "amount": 120
         },
         {
           "id": "2",
           "client": "Luan Felipe",
+          "attended": false,
           "doctor": "1",
-          "hour": "10"
+          "hour": "10",
+          "amount": 120
         },
         {
           "id": "3",
           "client": "José Donizete",
+          "attended": false,
           "doctor": "6",
-          "hour": "13"
+          "hour": "13",
+          "amount": 120
         }
       ]
     }
@@ -59,7 +119,8 @@
       "id": "1",
       "name": "João Pedro de Deus Freitas",
       "crm": "515253-SP",
-      "expertise": "Pediatria"
+      "expertise": "Pediatria",
+      "appointments": []
     },
     {
       "id": "2",

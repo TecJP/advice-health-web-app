@@ -4,8 +4,10 @@ import { Button, Card, Col, Container, Form, InputGroup, Row, Stack } from "reac
 import { AppointmentsList } from "../../components/AppointmentsList";
 import { Calendar } from "../../components/Calendar";
 import { NoticeAndRemindersTable } from "../../components/NoticeAndRemindersTable";
+import { useAppointments } from "../../hooks/useAppointments";
 
 export function Dashboard() {
+  const { clientsQuantityByDate, amountByDate } = useAppointments()
   const [selectedDate, setSelectedDate] = useState<Date>(new Date())
 
   return (
@@ -25,17 +27,23 @@ export function Dashboard() {
           <Row className="pt-4 mx-4 gap-2">
             <h1 className="fs-3 mt-4">Dashboard</h1>
             <Col className="h-100">
-              <Card className="h-100 p-2" bg="light">
+              <Card className="h-100 p-5" bg="light">
                 <Stack className="h-100" gap={5}>
+
                 </Stack>
               </Card>
             </Col>
             <Col className="h-100" gap={2}>
-              <Card className="h-100 p-2 mb-4" bg="light">
-
+              <Card className="h-100 p-4 mb-4" bg="light">
+                <h1>Total de Pacientes do dia</h1>
+                <p>{clientsQuantityByDate}</p>
               </Card>
-              <Card className="h-100 p-2" bg="light">
-
+              <Card className="h-100 p-4" bg="light">
+                <h1>Faturamento do dia</h1>
+                <p>{Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(amountByDate)}</p>
               </Card>
             </Col>
           </Row>

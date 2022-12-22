@@ -10,12 +10,16 @@ export type Appointments = {
       client: string,
       doctor: string,
       hour: string,
+      attended: boolean,
+      amount: number,
     }
   ],
 }
 
 interface AppointmentsContextProps {
   appointments: Appointments[];
+  clientsQuantityByDate: number;
+  amountByDate: number;
 }
 
 interface AppointmentsContextProviderProps {
@@ -28,6 +32,12 @@ export const AppointmentsContext = createContext<AppointmentsContextProps>(
 
 export function AppointmentsContextProvider({ children }: AppointmentsContextProviderProps) {
   const [appointments, setAppointments] = useState<Appointments[]>([])
+  const date = new Date().getDate().toString()
+  const appointmentsFiltered = appointments.find(appointment => appointment.date === date)
+  const appointmentsByDate = appointmentsFiltered && appointmentsFiltered.appointmentsDate.map(appointment => appointment)
+  const clientsQuantityByDate = appointmentsByDate ? appointmentsByDate.length : 0
+  const initialSubTotal = 0
+  const amountByDate = appointmentsByDate ? appointmentsByDate.reduce((amount, appointment) => amount + appointment.amount, initialSubTotal) : 0
 
   useEffect(() => {
     async function loadAppointments() {
@@ -39,7 +49,13 @@ export function AppointmentsContextProvider({ children }: AppointmentsContextPro
   }, []);
 
   return (
-    <AppointmentsContext.Provider value={{ appointments }}>
+    <AppointmentsContext.Provider
+      value={{
+        appointments,
+        clientsQuantityByDate,
+        amountByDate
+      }}
+    >
       {children}
     </AppointmentsContext.Provider>
   )
