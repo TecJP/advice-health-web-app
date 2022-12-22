@@ -2,8 +2,8 @@ import { Container, Table } from "react-bootstrap";
 
 export function NoticeAndRemindersTable() {
   return (
-    <Container fluid>
-      <Table responsive="sm" striped bordered hover>
+    <Container className="h-100 pt-4" fluid>
+      <Table className="h-100" responsive="sm" striped bordered hover>
         <thead>
           <tr>
             <th>#</th>

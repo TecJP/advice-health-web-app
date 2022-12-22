@@ -1,10 +1,13 @@
 import { BrowserRouter } from 'react-router-dom';
+import { DoctorsContextProvider } from './contexts/DoctorsContext';
 import { Router } from './router';
 
 export function App() {
   return (
     <BrowserRouter>
-      <Router />
+      <DoctorsContextProvider>
+        <Router />
+      </DoctorsContextProvider>
     </BrowserRouter>
   )
 }

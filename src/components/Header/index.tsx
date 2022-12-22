@@ -6,7 +6,7 @@ export function Header() {
       <Container className="p-0" fluid>
         <Navbar.Text className="text-dark" style={{ marginLeft: '4rem' }}>
           <h1 className="fs-3">Advice Health Web App</h1>
-          <p className="mb-0">Consultório de Médicos da Advice Health Web App</p>
+          <p className="mb-0">Consultório de Médicos da Advice Health</p>
         </Navbar.Text>
         <NavbarBrand className="text-center pt-0">
           <UserCircle size={48} />
