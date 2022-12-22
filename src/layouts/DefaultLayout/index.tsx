@@ -5,16 +5,16 @@ import { Sidebar } from "../../components/Sidebar";
 
 export function DefaultLayout() {
   return (
-    <Container fluid className="p-0 w-100">
+    <Container fluid className="p-0 w-100 h-100">
       <Header />
-      <Row className="w-100 ms-0">
-        <Col xs={1} className="p-0 ml-3 text-center" style={{ width: '3.5rem' }}>
+      <Row className="ms-0 w-100" style={{ height: 'calc(100vh - 87px)' }}>
+        <Col xs={1} className="p-0 h-100 text-center bg-gray">
           <Sidebar />
         </Col>
-        <Col lg className="p-0">
+        <Col lg className="p-0 h-100">
           <Outlet />
         </Col>
-      </Row >
-    </Container >
+      </Row>
+    </Container>
   )
 }

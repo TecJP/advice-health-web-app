@@ -1,15 +1,15 @@
 import { MagnifyingGlass } from "phosphor-react";
 import { useState } from "react";
-import { Button, Card, Col, Container, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Form, InputGroup, Row, Stack } from "react-bootstrap";
 import { AppointmentsList } from "../../components/AppointmentsList";
 import { Calendar } from "../../components/Calendar";
 import { NoticeAndRemindersTable } from "../../components/NoticeAndRemindersTable";
 
 export function Dashboard() {
   return (
-    <Container fluid className="h-100">
-      <Row className="h-100">
-        <Col lg="9" >
+    <Container className="h-100" fluid>
+      <Row style={{ height: 'calc(100vh - 87px)' }}>
+        <Col lg="9" className="h-100">
           <Row className="pt-4 mx-4">
             <InputGroup className="text-center">
               <Form.Control
@@ -19,42 +19,24 @@ export function Dashboard() {
                 <MagnifyingGlass size={24} weight="bold" />
               </Button>
             </InputGroup>
-            <h1 className="fs-3 mt-4">Dashboard</h1>
           </Row>
           <Row className="pt-4 mx-4 gap-2">
+            <h1 className="fs-3 mt-4">Dashboard</h1>
             <Col className="h-100">
-              <Card className="h-100" bg="secondary">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+              <Card className="h-100 p-2" bg="secondary">
+                <Stack className="h-100" gap={5}>
+                  <p>Total de Pacientes: 30</p>
+                  <p>Total de Pacientes Atendidos: 20</p>
+                  <p>Total de Pacientes: 30</p>
+                </Stack>
               </Card>
             </Col>
             <Col className="h-100" gap={2}>
-              <Card className="h-100 mb-4" bg="secondary">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+              <Card className="h-100 p-2 mb-4" bg="secondary">
+                
               </Card>
-              <Card className="h-100" bg="secondary">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+              <Card className="h-100 p-2" bg="secondary">
+              
               </Card>
             </Col>
           </Row>
@@ -63,9 +45,9 @@ export function Dashboard() {
             <NoticeAndRemindersTable />
           </Row>
         </Col>
-        <Col className="pt-2" style={{ backgroundColor: "#dedede", height: '80.5%' }}>
+        <Col className="p-0 h-100">
           <Calendar />
-          <Container className="mt-5 p-0 pe-3" style={{ overflowY: 'scroll', height: '49%' }}>
+          <Container className="mt-5 p-0 pe-3" style={{ height: '32rem' }}>
             <AppointmentsList />
           </Container>
         </Col>

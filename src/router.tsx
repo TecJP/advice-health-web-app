@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { App } from "./App";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { Appointments } from "./pages/Appointments";
 import { AppointmentsQuery } from "./pages/AppointmentsQuery";

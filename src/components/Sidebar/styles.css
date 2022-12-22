@@ -1,8 +1,12 @@
 .active {
-  background-color: #1e1e1e;
+  color: #fff;
 }
 
 .item {
   text-decoration: none;
   color: #000;
+}
+
+.item:hover {
+  color: #ADB5BD;
 }

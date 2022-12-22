@@ -3,7 +3,7 @@ import { Card, Stack, Container, Row, Col } from "react-bootstrap";
 
 export function DoctorsList() {
   return (
-    <Container className="p-0">
+    <Container className="p-0 pe-2 h-100 overflow-scroll">
       <Stack gap={2}>
         <Card>
           <Card.Body>

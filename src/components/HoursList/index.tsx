@@ -3,15 +3,15 @@ import { Card, Stack, Container, Row, Col, Button } from "react-bootstrap";
 
 export function HoursList() {
   return (
-    <Container className="p-0">
+    <Container className="p-0 ps-0 pe-2 h-100 overflow-scroll">
       <Stack gap={2}>
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">08:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                   <UserCircle size={64} />
                   <Container fluid>
@@ -33,10 +33,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">09:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -53,10 +53,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">10:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -73,10 +73,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">11:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -93,10 +93,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">12:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -113,10 +113,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">13:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -133,10 +133,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">14:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -153,10 +153,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">15:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -173,10 +173,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">16:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -193,10 +193,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">17:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>
@@ -213,10 +213,10 @@ export function HoursList() {
         <Card className="shadow-sm">
           <Card.Body>
             <Row className="d-flex align-items-center">
-              <Col md="1" className="align-middle">
+              <Col md="2" className="align-middle">
                 <h1 className="fs-3 mb-0">18:00</h1>
               </Col>
-              <Col md="10">
+              <Col md="9">
                 <Container fluid className="d-flex align-items-center">
                 </Container>
               </Col>

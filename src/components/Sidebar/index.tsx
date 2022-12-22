@@ -24,13 +24,13 @@ export function Sidebar() {
   ]
 
   return (
-    <Navbar style={{ height: '89.8vh', backgroundColor: "#f1f1f1" }} expand="xs" className="text-black">
+    <Navbar className="h-100">
       <Stack gap={3}>
-        <Button variant="transparent">
+        <Button variant="transparent" className="border-0">
           <CaretDoubleRight size={32} />
         </Button>
         {menuItem.map((item, index) => (
-          <NavLink key={index} to={item.path} className="item active">
+          <NavLink key={index} to={item.path} className="item active" title={item.name}>
             {item.icon}
           </NavLink>
         ))}
