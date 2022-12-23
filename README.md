@@ -17,10 +17,6 @@ Just a challenge.
 
 <br>
 
-<p align="center">
-  <img alt="coffe delivery" src=".github/coffe-delivery.png" width="100%">
-</p>
-
 ## 🚀 Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
