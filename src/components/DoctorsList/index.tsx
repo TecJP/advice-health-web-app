@@ -1,8 +1,14 @@
 import { UserCircle } from "phosphor-react";
+import { Dispatch, SetStateAction } from "react";
 import { Card, Stack, Container, Row, Col } from "react-bootstrap";
 import { useDoctors } from "../../hooks/useDoctors";
 
-export function DoctorsList() {
+interface DoctorsListProps {
+  doctorId: string;
+  setDoctorId: (id: string) => void
+}
+
+export function DoctorsList({doctorId, setDoctorId}: DoctorsListProps) {
   const { doctors } = useDoctors()
 
   return (
@@ -10,7 +16,7 @@ export function DoctorsList() {
       <Stack gap={2}>
         {doctors.map(doctor => {
           return (
-            <Card key={doctor.id}>
+            <Card key={doctor.id} className={`${doctorId === doctor.id && 'bg-secondary text-white'} pe-auto`} onClick={() => setDoctorId(doctor.id)}>
               <Card.Body>
                 <Row className="d-flex align-items-center">
                   <Col md="2">

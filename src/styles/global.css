@@ -39,6 +39,14 @@ nav {
   height: calc(100vh - 83px)
 }
 
+.container-dashboard {
+  height: 26rem;
+}
+
+.chart-container {
+  height: 20rem;
+}
+
 .appointments-list-height {
   height: 29rem;
 }

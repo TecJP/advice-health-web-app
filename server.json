@@ -1,4 +1,188 @@
 {
+  "clients": [
+    {
+      "id": "1",
+      "name": "João Pedro",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Maria Cristina",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Maria de Fátima",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Elisângela Nunes",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Silvio Parreira",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Gabriela de Deus",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Victor Hugo",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Leomir Dias",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Neto Costa",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "10",
+      "name": "José Lindoni",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Alex Gabriel",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Rogério Silva",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Rondinele Barbosa",
+      "birthDate": "1994-08-27",
+      "cpf": 11122233344,
+      "address": {
+        "cep": "75533250",
+        "street": "Rua Sumaré",
+        "neighboor": "Setor Planalto",
+        "number": 819,
+        "city": "Itumbiara",
+        "state": "GO"
+      }
+    }
+  ],
   "appointments": [
     {
       "id": "1",
@@ -6,75 +190,93 @@
       "appointmentsDate": [
         {
           "id": "1",
-          "client": "João Paulo",
+          "client": "1",
           "attended": true,
           "doctor": "1",
           "hour": "8",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "2",
-          "client": "Maria Cristina",
+          "client": "2",
           "attended": true,
           "doctor": "2",
           "hour": "9",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "3",
-          "client": "Maria de Fátima",
+          "client": "2",
           "attended": true,
           "doctor": "2",
           "hour": "10",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "4",
-          "client": "Elisângela",
+          "client": "4",
           "attended": true,
           "doctor": "1",
           "hour": "11",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "5",
-          "client": "Silvio Parreira",
+          "client": "5",
           "attended": true,
           "doctor": "3",
-          "hour": "12",
-          "amount": 120
+          "hour": "13",
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "6",
-          "client": "Gabriela de Deus",
+          "client": "6",
           "attended": true,
           "doctor": "6",
           "hour": "15",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "7",
-          "client": "Victor Hugo",
+          "client": "7",
           "attended": true,
           "doctor": "2",
           "hour": "16",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "8",
-          "client": "Leomir Dias",
+          "client": "8",
           "attended": false,
           "doctor": "1",
           "hour": "17",
-          "amount": 120
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "9",
-          "client": "Neto Costa",
+          "client": "9",
           "attended": false,
           "doctor": "6",
           "hour": "18",
-          "amount": 120
+          "amount": 120,
+          "confirmed": false,
+          "canceled": true
         }
       ]
     },
@@ -84,27 +286,43 @@
       "appointmentsDate": [
         {
           "id": "1",
-          "client": "Sandro Divino",
-          "attended": false,
-          "doctor": "4",
-          "hour": "9",
-          "amount": 120
+          "client": "10",
+          "attended": true,
+          "doctor": "1",
+          "hour": "8",
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "2",
-          "client": "Luan Felipe",
-          "attended": false,
-          "doctor": "1",
-          "hour": "10",
-          "amount": 120
+          "client": "11",
+          "attended": true,
+          "doctor": "2",
+          "hour": "9",
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         },
         {
           "id": "3",
-          "client": "José Donizete",
-          "attended": false,
-          "doctor": "6",
-          "hour": "13",
-          "amount": 120
+          "client": "12",
+          "attended": true,
+          "doctor": "2",
+          "hour": "10",
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
+        },
+        {
+          "id": "4",
+          "client": "13",
+          "attended": true,
+          "doctor": "1",
+          "hour": "11",
+          "amount": 120,
+          "confirmed": true,
+          "canceled": false
         }
       ]
     }
@@ -117,40 +335,89 @@
   "doctors": [
     {
       "id": "1",
-      "name": "João Pedro de Deus Freitas",
+      "name": "João Pedro de Deus",
       "crm": "515253-SP",
-      "expertise": "Pediatria",
-      "appointments": []
+      "expertise": "Pediatra",
+      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"],
+      "schedule": [
+        {
+          "8": {
+            "client": "1"
+          },
+          "11": {
+            "client": "4"
+          },
+          "17": {
+            "client": "8"
+          }
+        }
+      ]
     },
     {
       "id": "2",
-      "name": "Zaiter Luis Barcelos Silva",
+      "name": "Zaiter Luis Barcelos",
       "crm": "545556-SP",
-      "expertise": "Oftalmologia"
+      "expertise": "Oftalmologia",
+      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"],
+      "schedule": [
+        {
+          "9": {
+            "client": "2"
+          },
+          "10": {
+            "client": "3"
+          },
+          "16": {
+            "client": "7"
+          }
+        }
+      ]
     },
     {
       "id": "3",
-      "name": "Francisco Xavier da Costa Neto",
+      "name": "Francisco Xavier",
       "crm": "575859-SP",
-      "expertise": "Ortopedista"
+      "expertise": "Ortopedista",
+      "availableHours": ["9", "10", "11", "13", "14", "15", "16", "17", "18"],
+      "schedule": [
+        {
+          "13": {
+            "client": "5"
+          }
+        }
+      ]
     },
     {
       "id": "4",
       "name": "Sandro Souza",
       "crm": "515260-SP",
-      "expertise": "Clinico Geral"
+      "expertise": "Clinico Geral",
+      "availableHours": ["11", "12", "13", "14", "15", "16", "17", "18"]
     },
     {
       "id": "5",
-      "name": "Fernando Pereira Batista",
+      "name": "Fernando Pereira",
       "crm": "515261-SP",
-      "expertise": "Cardiologista"
+      "expertise": "Cardiologista",
+      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"]
+
     },
     {
       "id": "6",
       "name": "João Antônio",
       "crm": "515262-SP",
-      "expertise": "Neurologista"
+      "expertise": "Neurologista",
+      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16"],
+      "schedule": [
+        {
+          "15": {
+            "client": "6"
+          },
+          "18": {
+            "client": "9"
+          }
+        }
+      ]
     }
   ]
 }

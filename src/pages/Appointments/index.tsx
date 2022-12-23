@@ -7,6 +7,7 @@ import { HoursList } from "../../components/HoursList";
 
 export function Appointments() {
   const [selectedDate, setSelectedDate] = useState<Date>(new Date())
+  const [doctorSelectedId, setDoctorSelectedId] = useState("1")
 
   return (
     <Container fluid className="h-100 bg-blue">
@@ -14,7 +15,7 @@ export function Appointments() {
         <Col lg="4" className="px-4 h-100">
           <h1 className="fs-3 mt-4">Médicos</h1>
           <Container fluid className="mt-3 p-0 pe-3 doctors-list-height">
-            <DoctorsList />
+            <DoctorsList doctorId={doctorSelectedId} setDoctorId={setDoctorSelectedId}/>
           </Container>
           <Container fluid className="mt-5">
             <Calendar date={selectedDate} setDate={setSelectedDate} />
@@ -23,7 +24,7 @@ export function Appointments() {
         <Col className="px-4 h-100">
           <h1 className="fs-3 mt-4">{format(new Date(selectedDate.toString()), "dd'/'MMM yyyy")}</h1>
           <Container fluid className="mt-3 p-0 pe-3 hours-list-height">
-            <HoursList />
+            <HoursList doctorId={doctorSelectedId} />
           </Container>
         </Col>
       </Row>
