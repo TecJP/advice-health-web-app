@@ -36,14 +36,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Project
 
-> Clonar esse repositório
->
+Clonar esse repositório
+
 > $ cd advice-health-web-app
 >
 > $ npm install
 >
-> entre no arquivo server.json e verifique se os valores de date correspondem ao dia atual e ao próximo dia.
->
+> Entre no arquivo server.json e verifique se os valores de date correspondem ao dia atual e ao próximo dia.
 > $ npm run server
 >
 > $ npm run dev
