@@ -7,12 +7,25 @@ export type Doctors = {
   crm: string,
   expertise: string,
   availableHours: [''],
+  schedule: [
+    hour: {
+      client: string,
+    }
+  ],
 }
 
 interface DoctorsContextProps {
   doctors: Doctors[];
   findDoctor: (id: string) => void;
   doctorsHourList: (id: string) => string[];
+  doctorSchedule: {
+    id: string,
+    schedule: [
+      hour: {
+        client: string,
+      }
+    ]
+  }[];
 }
 
 interface DoctorsContextProviderProps {
@@ -25,6 +38,13 @@ export const DoctorsContext = createContext<DoctorsContextProps>(
 
 export function DoctorsContextProvider({ children }: DoctorsContextProviderProps) {
   const [doctors, setDoctors] = useState<Doctors[]>([])
+
+  const doctorSchedule = doctors.map(doctor => {
+    return {
+      id: doctor.id,
+      schedule: doctor.schedule
+    }
+  })
 
   useEffect(() => {
     async function loadDoctors() {
@@ -49,7 +69,7 @@ export function DoctorsContextProvider({ children }: DoctorsContextProviderProps
   }
 
   return (
-    <DoctorsContext.Provider value={{ doctors, findDoctor, doctorsHourList }}>
+    <DoctorsContext.Provider value={{ doctors, findDoctor, doctorsHourList, doctorSchedule }}>
       {children}
     </DoctorsContext.Provider>
   )

@@ -186,7 +186,7 @@
   "appointments": [
     {
       "id": "1",
-      "date": "22",
+      "date": "23",
       "appointmentsDate": [
         {
           "id": "1",
@@ -282,7 +282,7 @@
     },
     {
       "id": "2",
-      "date": "23",
+      "date": "24",
       "appointmentsDate": [
         {
           "id": "1",
@@ -344,11 +344,32 @@
           "8": {
             "client": "1"
           },
+          "9": {
+            "client": null
+          },
+          "10": {
+            "client": null
+          },
           "11": {
             "client": "4"
           },
+          "13": {
+            "client": null
+          },
+          "14": {
+            "client": null
+          },
+          "15": {
+            "client": null
+          },
+          "16": {
+            "client": null
+          },
           "17": {
             "client": "8"
+          },
+          "18": {
+            "client": null
           }
         }
       ]
@@ -361,14 +382,35 @@
       "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"],
       "schedule": [
         {
+          "8": {
+            "client": null
+          },
           "9": {
             "client": "2"
           },
           "10": {
             "client": "3"
           },
+          "11": {
+            "client": null
+          },
+          "13": {
+            "client": null
+          },
+          "14": {
+            "client": null
+          },
+          "15": {
+            "client": null
+          },
           "16": {
             "client": "7"
+          },
+          "17": {
+            "client": null
+          },
+          "18": {
+            "client": null
           }
         }
       ]
@@ -381,8 +423,32 @@
       "availableHours": ["9", "10", "11", "13", "14", "15", "16", "17", "18"],
       "schedule": [
         {
+          "9": {
+            "client": null
+          },
+          "10": {
+            "client": null
+          },
+          "11": {
+            "client": null
+          },
           "13": {
             "client": "5"
+          },
+          "14": {
+            "client": null
+          },
+          "15": {
+            "client": null
+          },
+          "16": {
+            "client": null
+          },
+          "17": {
+            "client": null
+          },
+          "18": {
+            "client": null
           }
         }
       ]
@@ -392,15 +458,76 @@
       "name": "Sandro Souza",
       "crm": "515260-SP",
       "expertise": "Clinico Geral",
-      "availableHours": ["11", "12", "13", "14", "15", "16", "17", "18"]
+      "availableHours": ["11", "12", "13", "14", "15", "16", "17", "18"],
+      "schedule": [
+        {
+          "11": {
+            "client": null
+          },
+          "12": {
+            "client": null
+          },
+          "13": {
+            "client": null
+          },
+          "14": {
+            "client": null
+          },
+          "15": {
+            "client": null
+          },
+          "16": {
+            "client": null
+          },
+          "17": {
+            "client": null
+          },
+          "18": {
+            "client": null
+          }
+        }
+      ]
     },
     {
       "id": "5",
       "name": "Fernando Pereira",
       "crm": "515261-SP",
       "expertise": "Cardiologista",
-      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"]
-
+      "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16", "17", "18"],
+      "schedule": [
+        {
+          "8": {
+            "client": null
+          },
+          "9": {
+            "client": null
+          },
+          "10": {
+            "client": null
+          },
+          "11": {
+            "client": null
+          },
+          "13": {
+            "client": null
+          },
+          "14": {
+            "client": null
+          },
+          "15": {
+            "client": null
+          },
+          "16": {
+            "client": null
+          },
+          "17": {
+            "client": null
+          },
+          "18": {
+            "client": null
+          }
+        }
+      ]
     },
     {
       "id": "6",
@@ -410,8 +537,32 @@
       "availableHours": ["8", "9", "10", "11", "13", "14", "15", "16"],
       "schedule": [
         {
+          "8": {
+            "client": null
+          },
+          "9": {
+            "client": null
+          },
+          "10": {
+            "client": null
+          },
+          "11": {
+            "client": null
+          },
+          "13": {
+            "client": null
+          },
+          "14": {
+            "client": null
+          },
           "15": {
             "client": "6"
+          },
+          "16": {
+            "client": null
+          },
+          "17": {
+            "client": null
           },
           "18": {
             "client": "9"

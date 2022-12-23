@@ -45,8 +45,11 @@ export function ClientContextProvider({ children }: ClientContextProviderProps) 
     const clientName = clients.find(client => client.id === id)
     if (!clientName) {
       return;
+    } else if (clientName === undefined) {
+      return;
+    } else {
+      return clientName.name
     }
-    return clientName.name
   }
 
   return (
