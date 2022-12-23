@@ -41,8 +41,9 @@ Clonar esse repositório
 > $ cd advice-health-web-app
 >
 > $ npm install
->
-> Entre no arquivo server.json e verifique se os valores de date correspondem ao dia atual e ao próximo dia.
+
+Entre no arquivo server.json e verifique se os valores de date correspondem ao dia atual e ao próximo dia.
+
 > $ npm run server
 >
 > $ npm run dev
